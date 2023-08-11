@@ -3,6 +3,9 @@
     box-shadow: 0px 10px 15px -3px rgb(0, 0, 0, 0.1);
 }
 
+
+
+
 .theme-menu>li {
     text-transform: uppercase;
     font-size: 18px;
@@ -11,7 +14,7 @@
 }
 
 .theme-menu a.active {
-    color: #fc7700 !important;
+    color: #ee2f47 !important;
 }
 
 .theme-menu a {
@@ -21,12 +24,12 @@
 .theme-search>input {
     width: 300px;
     border-radius: 20px;
-    border: 2px solid #fc7700;
+    border: 2px solid #ee2f47;
 }
 
 .theme-search>button {
     border-radius: 20px;
-    background-color: #fc7700;
+    background-color: #ee2f47;
     color: white;
     padding: 0px 30px;
     text-transform: uppercase;
@@ -34,7 +37,7 @@
 }
 
 .theme-search>button:hover {
-    background-color: #fc7700;
+    background-color: #ee2f47;
     color: white;
 }
 
@@ -47,17 +50,49 @@
 
 .theme-card>i {
     font-size: 50px;
-    color: #fc7700;
+    color: #ee2f47;
+}
+
+.top-header {
+    background-color: #ee2f47;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.heading {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.theme-icon {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: inherit;
+    gap: 10px;
+    animation: 10s linear infinite reverse  heading;
+}
+
+@keyframes heading {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0)
+    }
 }
 
 
 
 
-
-
-
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 993px) {
     .theme-menu {
         text-align: center;
     }
@@ -82,6 +117,10 @@
         padding: 8px;
         width: 300px;
     }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 332px) {
@@ -93,7 +132,7 @@
         width: 100%;
     }
 
-    .card{
+    .card {
         margin-bottom: 20px;
     }
 }
